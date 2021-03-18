@@ -1,6 +1,6 @@
 #+TITLE: 32-bit MIPS CPU
 
-[[https://imgur.com/n4pcYIi]]
+[[https://i.imgur.com/n4pcYIi.png]]
 
 * Overview
 
@@ -8,9 +8,12 @@ This is an implementation of [[https://www.mips.com/products/architectures/mips3
 
 R-type instructions have a different behaviour. See,
 
-[[https://imgur.com/OZTkhra]]
+[[https://i.imgur.com/OZTkhra.png]]
 
-Structural Verilog is used as much as possible as it was another constraint. For other implementataion details and constraints, [[https://github.com/repelliuss/32-bit-MIPS-CPU/blob/cb18a28c038568c1ce96b99d2f6d72d03c5f57ec/assignment.pdf][see this assignment]].
+Structural Verilog is used as much as possible as it was another constraint.
+
+For other implementataion details and constraints, [[https://github.com/repelliuss/32-bit-MIPS-CPU/blob/cb18a28c038568c1ce96b99d2f6d72d03c5f57ec/assignment.pdf][see this assignment]].
+
 For results, development process and all other information, [[https://github.com/repelliuss/32-bit-MIPS-CPU/blob/cb18a28c038568c1ce96b99d2f6d72d03c5f57ec/report.pdf][see this report]].
 * Testing
 
