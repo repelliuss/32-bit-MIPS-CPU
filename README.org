@@ -1,0 +1,20 @@
+#+TITLE: 32-bit MIPS CPU
+
+[[https://imgur.com/n4pcYIi]]
+
+* Overview
+
+This is an implementation of [[https://www.mips.com/products/architectures/mips32-2/][MIPS32]] using Quartus II, Verilog and ModelSim.
+
+R-type instructions have a different behaviour. See,
+
+[[https://imgur.com/OZTkhra]]
+
+Structural Verilog is used as much as possible as it was another constraint. For other implementataion details and constraints, [[https://github.com/repelliuss/32-bit-MIPS-CPU/blob/cb18a28c038568c1ce96b99d2f6d72d03c5f57ec/assignment.pdf][see this assignment]].
+For results, development process and all other information, [[https://github.com/repelliuss/32-bit-MIPS-CPU/blob/cb18a28c038568c1ce96b99d2f6d72d03c5f57ec/report.pdf][see this report]].
+* Testing
+
+It is recommended to [[https://github.com/repelliuss/32-bit-MIPS-CPU/releases/latest][get project from here]] and use =qar= file to restore project. You can also clone repository and try to open =mips32Rn.qpf= in Quartus II.
+
+- Use ModelSim and compile =src/mips32_testbench.v=. This is main testbench and it will run instructions defined [[https://github.com/repelliuss/32-bit-MIPS-CPU/blob/v1.0/simulation/modelsim/instruction.mem][here]].
+- You can also compile =src/testbenches/***.v= testbenches to test each component individually.
