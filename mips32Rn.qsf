@@ -1,0 +1,118 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 17:57:10  January 14, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		mips32Rn_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY mips32
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:57:10  JANUARY 14, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SEARCH_PATH simulation/modelsim/ -tag from_archive
+set_global_assignment -name SEARCH_PATH src/ -tag from_archive
+set_global_assignment -name SEARCH_PATH src/testbenches/ -tag from_archive
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SOURCE_FILE simulation/modelsim/data_out.mem
+set_global_assignment -name SOURCE_FILE simulation/modelsim/registers_out.mem
+set_global_assignment -name SOURCE_FILE simulation/modelsim/instruction_out.mem
+set_global_assignment -name VERILOG_FILE src/testbenches/sign_extend16_32_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/shift_left2_32_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/rtype_controller_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/or1x32_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/or1x4_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/or1x3_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/mux4_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/mux2_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/equal6x2_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/comparator1x2_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/comparator_controller_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/big_controller_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/and6x1_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/and1x4_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/and1x3_1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/alu32_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/alu1_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/alu_controller_testbench.v
+set_global_assignment -name VERILOG_FILE src/testbenches/adder2x32_32_testbench.v
+set_global_assignment -name SOURCE_FILE simulation/modelsim/data.mem
+set_global_assignment -name SOURCE_FILE simulation/modelsim/registers.mem
+set_global_assignment -name SOURCE_FILE simulation/modelsim/instruction.mem
+set_global_assignment -name VERILOG_FILE src/mux4_1.v
+set_global_assignment -name VERILOG_FILE src/mux2_1.v
+set_global_assignment -name VERILOG_FILE src/equal6x2_1.v
+set_global_assignment -name VERILOG_FILE src/testbenches/comparator32x2_testbench.v
+set_global_assignment -name VERILOG_FILE src/sign_extend16_32.v
+set_global_assignment -name VERILOG_FILE src/shift_left2_32.v
+set_global_assignment -name VERILOG_FILE src/rtype_controller.v
+set_global_assignment -name VERILOG_FILE src/registers.v
+set_global_assignment -name VERILOG_FILE src/pc_controller.v
+set_global_assignment -name VERILOG_FILE src/or1x32_1.v
+set_global_assignment -name VERILOG_FILE src/or1x4_1.v
+set_global_assignment -name VERILOG_FILE src/or1x3_1.v
+set_global_assignment -name VERILOG_FILE src/mux4_32.v
+set_global_assignment -name VERILOG_FILE src/mux2_32.v
+set_global_assignment -name VERILOG_FILE src/mux2_5.v
+set_global_assignment -name VERILOG_FILE src/mips32_testbench.v
+set_global_assignment -name VERILOG_FILE src/mips32.v
+set_global_assignment -name VERILOG_FILE src/memory.v
+set_global_assignment -name VERILOG_FILE src/instruction.v
+set_global_assignment -name VERILOG_FILE src/comparator32x2.v
+set_global_assignment -name VERILOG_FILE src/comparator1x2.v
+set_global_assignment -name VERILOG_FILE src/comparator_controller.v
+set_global_assignment -name VERILOG_FILE src/big_controller.v
+set_global_assignment -name VERILOG_FILE src/and6x1_1.v
+set_global_assignment -name VERILOG_FILE src/and1x32_1.v
+set_global_assignment -name VERILOG_FILE src/and1x4_1.v
+set_global_assignment -name VERILOG_FILE src/and1x3_1.v
+set_global_assignment -name VERILOG_FILE src/alu32.v
+set_global_assignment -name VERILOG_FILE src/alu1.v
+set_global_assignment -name VERILOG_FILE src/alu_controller.v
+set_global_assignment -name VERILOG_FILE src/adder2x32_32.v
+set_global_assignment -name VERILOG_FILE src/adder1x2.v
